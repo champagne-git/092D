@@ -57,7 +57,7 @@ const writeToFile = (filePath, data) => {
 }
 
 const main = () => {
-    const dz = readFileAndParseData('../output/output_qmdz.txt')
+    const dz = readFileAndParseData('../output/output_dz_qm.txt')
     const frequency = readFileAndParseData(`../info/frequency${frequency_mb}.txt`)
     const dict = sortDict(dz, frequency)
     const formattedData = formatData(dict)
